@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>olimpiadas</title>
     <style>
-        html {
-            background-color: hsl(115, 35%, 39%);
-            height: 100%;
+        body {
+            background-color: green;
+            width: 100vw;
+            height: 100vh;
             margin: 0;
             padding: 0;
-
         }
 
         .Circle {
@@ -22,13 +22,14 @@
         }
 
         #topBox {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 100%;
+            height: 50%;
         }
 
         .alinhar {
-            height: 300px;
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -43,35 +44,41 @@
         }
 
         .medalhas {
-        width: 20px;
-       
+            width: 20px;
+
         }
 
+        .imagemtopbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
     </style>
 </head>
 
 <body>
     <div id="topBox">
-        <div>
+        <div class="imagemtopbox">
             <img width="200" src="https://olympics.com/_pr/topic-assets/paris-2024/emblem-oly.svg" alt="">
         </div>
-
-
     </div>
 
     <div class="alinhar">
         <div>
             <table>
                 <thead>
-                    <table border="solid">
+                    <table>
                         <thead>
                             <tr>
-                                <th>Posição</th>
-                                <th>País</th>
+                                <th>Posição </th>
+                                <th>País </th>
                                 <th>Ouro</th>
-                                <th>Prata</th>
-                                <th>Bronze</th>
-                                <th>Todas</th>
+                                <th>Prata </th>
+                                <th>Bronze </th>
+                                <th> <img class="medalhas"
+                                        src="https://i.pinimg.com/564x/e6/94/16/e69416cc328a1622c98cde69b42bc672.jpg"
+                                        alt="" srcset=""> Todas</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -79,12 +86,11 @@
                                 <td>1°</td>
                                 <td> <img class="bandeira"
                                         src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/USA.png"
-                                        alt="" srcset="">USA</td>
+                                        alt="" srcset=""> USA</td>
                                 <td> 27</td>
                                 <td>35</td>
                                 <td>33</td>
-                                <td> <img  class="bandeira"
-                                    src="https://i.pinimg.com/564x/e6/94/16/e69416cc328a1622c98cde69b42bc672.jpg" alt="" srcset="">95</td>
+                                <td>95</td>
                         </tbody>
                         </tr>
                         <tbody>
@@ -92,7 +98,7 @@
                                 <td>2°</td>
                                 <td> <img class="bandeira"
                                         src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/CHN.png"
-                                        alt="" srcset="">CHN</td>
+                                        alt="" srcset=""> CHN</td>
                                 <td>26</td>
                                 <td>24</td>
                                 <td>17</td>
@@ -117,7 +123,7 @@
                                 <td>
                                     <img class="bandeira"
                                         src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/BRA.png"
-                                        alt="" sizes="" srcset="">BRASIL
+                                        alt="" sizes="" srcset=""> BRASIL
                                 </td>
                                 <td>2</td>
                                 <td>5</td>
@@ -131,7 +137,6 @@
 
                             </tr>
                     </table>
-        </div>
     </div>
 
     <section>
