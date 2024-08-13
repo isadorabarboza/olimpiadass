@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>olimpiadas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
-        body {
-            background-color: green;
-            width: 100vw;
-            height: 100vh;
+        * {
             margin: 0;
-            padding: 0;
+        }
+
+        .body {
+            background-color: rgb(188, 211, 230);
         }
 
         .Circle {
-            width: 400px;
+            width: 20px;
             height: 150px;
             background-position: 47% 20%;
             background-repeat: no-repeat;
@@ -24,42 +27,67 @@
         #topBox {
             width: 100%;
             height: 50%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/medalha-paris-2024-olimpiada-e1707397605146.webp?w=1220&h=674&crop=1&quality=50);
+            background-position: center;
+            background-size: cover;
+
         }
 
         .alinhar {
-            background-color: rgb(255, 255, 255);
             width: 100%;
-            height: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
 
-
+        td,
+        th {
+            border: 2px solid rgb(55, 0, 255);
+            border-radius: 20px;
         }
 
         .bandeira {
             width: 20px;
-
         }
 
         .medalhas {
             width: 20px;
-
         }
 
         .imagemtopbox {
+            height: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 50px;
+            margin-bottom: 25px;
         }
+
+        .medina {
+            margin-top: 50px;
+            flex-direction: column;
+            
+        }
+
+        .imagem {
+            height: 300px;
+            width: 300px;
+            border-radius: 15px;
+        }
+        .botao{
+            
+        }
+        
     </style>
 </head>
 
-<body>
+<body class="body">
     <div id="topBox">
         <div class="imagemtopbox">
+
             <img width="200" src="https://olympics.com/_pr/topic-assets/paris-2024/emblem-oly.svg" alt="">
         </div>
     </div>
@@ -76,9 +104,7 @@
                                 <th>Ouro</th>
                                 <th>Prata </th>
                                 <th>Bronze </th>
-                                <th> <img class="medalhas"
-                                        src="https://i.pinimg.com/564x/e6/94/16/e69416cc328a1622c98cde69b42bc672.jpg"
-                                        alt="" srcset=""> Todas</th>
+                                <th>Todas </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -86,8 +112,8 @@
                                 <td>1°</td>
                                 <td> <img class="bandeira"
                                         src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/USA.png"
-                                        alt="" srcset=""> USA</td>
-                                <td> 27</td>
+                                        alt="" srcset=""> USA </td>
+                                <td>27</td>
                                 <td>35</td>
                                 <td>33</td>
                                 <td>95</td>
@@ -98,11 +124,11 @@
                                 <td>2°</td>
                                 <td> <img class="bandeira"
                                         src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/CHN.png"
-                                        alt="" srcset=""> CHN</td>
-                                <td>26</td>
-                                <td>24</td>
-                                <td>17</td>
-                                <td>67</td>
+                                        alt="" srcset=""> CHN </td>
+                                <td> 26</td>
+                                <td> 24</td>
+                                <td> 17</td>
+                                <td> 67</td>
                         </tbody>
                         </tr>
                         <tbody>
@@ -110,7 +136,7 @@
                                 <td>3°</td>
                                 <td> <img class="bandeira"
                                         src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/AUS.png"
-                                        alt="" srcset=""> AUS</td>
+                                        alt="" srcset=""> AUS </td>
                                 <td>18</td>
                                 <td>14</td>
                                 <td>11</td>
@@ -123,7 +149,7 @@
                                 <td>
                                     <img class="bandeira"
                                         src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/BRA.png"
-                                        alt="" sizes="" srcset=""> BRASIL
+                                        alt="" sizes="" srcset=""> BRA
                                 </td>
                                 <td>2</td>
                                 <td>5</td>
@@ -137,13 +163,15 @@
 
                             </tr>
                     </table>
-    </div>
-
-    <section>
-        <div class="newDiv">
-            <img src="" alt="">
         </div>
-    </section>
+        <div class="medina">
+            <h1 style="font-family: 'Roboto';"><b> GABRIEL MEDINA</b>
+            </h1>
+            <div>
+                <img src="https://i.pinimg.com/564x/bd/f7/82/bdf782d9c8bfd55211b9dad0f22cc5f8.jpg" class="imagem">
+            </div>
+
+        </div>
 
 
 </body>
