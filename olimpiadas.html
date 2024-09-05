@@ -15,9 +15,9 @@
             margin: 0;
         }
 
-        /* .body {
+        .body {
             background-color: rgb(188, 211, 230);
-        } */
+        }
 
         .Circle {
             width: 20%;
@@ -28,7 +28,7 @@
 
         #topBox {
             width: 100%;
-            height:90%;
+            height: 100%;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -66,38 +66,61 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 10%;
+            margin-bottom: 3%;
         }
 
         .medina {
-            margin-top: 50px;
+            display: flex;
             flex-direction: column;
 
         }
 
         .imagem {
-
-            height: 300px;
-            width: 300px;
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            width: 250px;
             border-radius: 15px;
-            margin-top: 30px;
-            margin-left: 120px;
+            margin-top: 10px;
+
+        }
+
+        .flavinha {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .imagemflavinha {
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            width: 250px;
+            border-radius: 15px;
+            margin-top: 10px;
+
+        }
+
+        .not {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (max-width:760px) {
+            body {
+                background: rgb(157, 189, 238);
+            }
+
         }
 
         @media (max-width:440px) {
-            body{
-                background:rgb(255, 0, 21);
+            body {
+                background: rgb(157, 189, 238);
             }
-       
-        }
-        @media (max-width:1000px) {
-            body{
-                background:rgb(255, 0, 21);
-            }
-       
-        }
 
-
+        }
     </style>
 </head>
 
@@ -168,7 +191,7 @@
                                         src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/BRA.png"
                                         alt="" sizes="" srcset=""> BRA
                                 </td>
-                                <td>2</td>
+                                <td>3</td>
                                 <td>5</td>
                                 <td>7</td>
                                 <td>14</td>
@@ -181,20 +204,37 @@
                             </tr>
                     </table>
         </div>
-        <div class="medina">
-            <h1 style="font-family: 'Roboto';"><b> GABRIEL MEDINA:
-                    <a href="./olimpiadas2.html"> VEJA MAIS SOBRE</b></a></h1>
-
-            <h3>
-                <p><i> Conheça mais sobre sua história nas olimpíadas em Paris 2024 </i></p>
-            </h3>
+        <div class="not">
 
             <div>
-                <img src="https://i.pinimg.com/564x/bd/f7/82/bdf782d9c8bfd55211b9dad0f22cc5f8.jpg" class="imagem">
+                <div class="medina">
+                    <img src="https://i.pinimg.com/564x/bd/f7/82/bdf782d9c8bfd55211b9dad0f22cc5f8.jpg" class="imagem">
+                </div>
+                <div>
+                    <h1 style="font-family: 'Roboto';"><b> GABRIEL MEDINA:
+                            <a href="./olimpiadas2.html"> VEJA MAIS SOBRE</b></a></h1>
+
+                    <h3>
+                        <p><i> Conheça mais sobre sua história nas olimpíadas em Paris 2024 </i></p>
+                    </h3>
+
+                </div>
             </div>
+            <div>
 
+                <div class="flavinha">
+
+                    <img src="https://i.pinimg.com/564x/bd/f7/82/bdf782d9c8bfd55211b9dad0f22cc5f8.jpg"
+                        class="imagemflavinha">
+                </div>
+                <h1 style="font-family: 'Roboto';"><b> FLAVINHA:
+                        <a href="./olimpiadas3.html"> VEJA MAIS SOBRE</b></a></h1>
+
+                <h3>
+                    <p><i> Flavinha Brilha nas Olimpíadas: Jovem Talento Brasileiro Conquista Ouro no Atletismo </i></p>
+                </h3>
+            </div>
         </div>
-
 
 </body>
 
